@@ -7,7 +7,6 @@ body {
 .background {
     background-image: url("../../img/bg.jpg");
     background-size: cover;
-    opacity: 0.5;
 }
 
 .contenido {
