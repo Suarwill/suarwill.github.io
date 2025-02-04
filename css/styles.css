@@ -38,11 +38,10 @@ header {
 .contact {
     margin: 20px;
     padding: 20px;
-    background: linear-gradient(to right,steelblue 66%, lightskyblue,);
+    background: linear-gradient(to right,steelblue , lightskyblue,);
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     text-align: right;
-    justify-content: right;
     font-style: italic;
     font-size: 14px;
     color: black;
