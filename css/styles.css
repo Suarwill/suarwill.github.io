@@ -38,7 +38,7 @@ header {
 .contact {
     margin: 20px;
     padding: 20px;
-    background-color: linear-gradient(to right,steelblue , lightskyblue);
+    background:content-box linear-gradient(to right,steelblue , lightskyblue);
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     text-align: right;
