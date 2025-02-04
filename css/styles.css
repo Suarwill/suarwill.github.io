@@ -27,6 +27,11 @@ header {
     margin-bottom: 20px;
 }
 
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
 footer {
     text-align: center;
     font-size: 12px;
