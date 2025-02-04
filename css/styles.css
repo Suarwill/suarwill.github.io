@@ -28,7 +28,11 @@ header {
 }
 
 .contact {
-    text-align: center;
+    text-align: right;
+    justify-content: right;
+    font-style: italic;
+    font-size: 14px;
+    color: grey;
     margin-top: 20px;
 }
 
