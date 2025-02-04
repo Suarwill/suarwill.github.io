@@ -28,6 +28,8 @@ header {
 }
 
 .contact {
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: right;
     justify-content: right;
     font-style: italic;
