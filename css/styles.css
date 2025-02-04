@@ -27,6 +27,14 @@ header {
     margin-bottom: 20px;
 }
 
+.lineales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .contact {
     margin-top: 5px;
     margin-bottom: 5px;
