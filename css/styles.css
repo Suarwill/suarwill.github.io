@@ -20,6 +20,7 @@ body.background {
 
 header {
     display: flex;
+    margin: 5% ;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -60,7 +61,7 @@ nav li a:hover {
 
 #about {
     background: whitesmoke;
-    width: 95%;
+    margin: 5%;
     text-align: center;
     align-items: center;
     border: 1px solid #ccc;
@@ -69,7 +70,7 @@ nav li a:hover {
 }
 
 #contenido {
-    margin: 2rem auto;
+    margin: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,9 +79,11 @@ nav li a:hover {
 #contenido h2{
     text-align: center;
     font-size: 44px;
-    background-image: var(--color-lineal-texto);
+    /*background-image: var(--color-lineal-texto);
     background-clip: text;
-    color: transparent;
+    color: transparent;*/
+    color: black;
+    text-shadow: 0 0 10px skyblue;
 }
 
 #projects {
