@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     align-items: center;
 }
 
@@ -45,11 +45,11 @@ nav li a:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;  /* Stack header vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start on smaller screens */
+        flex-direction: column;
+        align-items: flex-start;
     }
     nav ul {
-        margin-top: 10px; /* Add some margin on smaller screens */
+        margin-top: 10px;
     }
 }
 
@@ -72,6 +72,8 @@ nav li a:hover {
 }
 #contenido-proyectos h2{
     text-align: center;
+    font-size: 44px;
+    color: grey;
 }
 
 #projects {
@@ -96,6 +98,9 @@ nav li a:hover {
 
 .proyecto h3{
     text-align: center;
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
 }
 
 .contact {
