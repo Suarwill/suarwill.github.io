@@ -118,6 +118,16 @@ nav li a:hover {
 
 .contact {
     text-align: center;
+    justify-items: space-between;
+}
+
+.contact a img{
+    margin: 1%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 15px skyblue;
 }
 
 footer {
