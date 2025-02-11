@@ -10,12 +10,11 @@
     <body class="background">
         <div class="contenido">
             <header>
-                <h1>Mi Portafolio</h1>
+                <h1>Portfolio</h1>
                 <nav>
                     <ul>
                         <li><a href="#about">Sobre mí</a></li>
                         <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -24,35 +23,68 @@
                 <h2>Sobre mí</h2>
                 <p>Breve descripción de ti y tus habilidades.</p>
             </section>
-        
-            <section id="projects">
-                <h2>Proyectos</h2>
-                <div class="project">
-                    <h3>APP de Analista de Inventarios</h3>
-                    <p>Realizada para cubrir las tareas que podian automatizarse en la empresa</p>
-                    <p>Tareas como:</p>
-                        <p>■ Extraer datos de los archivos Excel, como las Mermas enviadas por las sucursales, o sus Sobrestock. 
-                            <br> &emsp; Creandos un archivo CSV "AAA", el cual pueda ser subido al servidor Web.</p>
-                        <p>■ Automatizar mediante <b>Selenium</b>, la descarga del archivo de diferencias de Inventarios (por sucursual, individualmente).
-                            <br> &emsp; Unificando todos para su posterior Analisis</p>
-                        <p>■ Cierre de inventarios, sucursal por sucursal. 
-                            <br> &emsp;Ya que esta tarea se debia realizar uno a uno.</p>
 
-                    <p>Las medidas de seguridad tomadas fueron:
-                        <br> &emsp; ■ Encodeado de parte del texto en <b>Base64</b>>.
-                        <br> &emsp; ■ Guardar datos de seguridad en un archivo <b>.env</b>.
-                        <br> &emsp; ■ Codificación de los datos de acceso para ofuscar su lectura externa. </p> 
-                    <a href="https://github.com/Suarwill/APP_Analista">Ver en GitHub</a>
-                </div>
-            </section>
-        </div>
+            <div id="contenido-proyectos">
+                <h2>Proyectos</h2>
+
+                <section id="projects">
+                    <div class="proyecto">
+                        <h3>APP de Analista de Inventarios</h3>
+                        <p>Desarrollada para automatizar tareas en la empresa.</p>
+                        
+                        <h4>Funciones principales:</h4>
+                        <ul>
+                            <li>Extracción de datos desde archivos Excel, como mermas y sobrestock, generando un archivo CSV para su carga en el servidor.</li>
+                            <li>Automatización con <b>Selenium</b> para la descarga de diferencias de inventario por sucursal y su unificación para análisis.</li>
+                            <li>Cierre automatizado de inventarios por sucursal.</li>
+                        </ul>
+                        
+                        <h4>Medidas de seguridad:</h4>
+                        <ul>
+                            <li>Codificación de texto en <b>Base64</b> para protección.</li>
+                            <li>Almacenamiento de datos sensibles en un archivo <b>.env</b>.</li>
+                            <li>Ofuscación de datos de acceso para mayor seguridad.</li>
+                        </ul>
+                        
+                        <a href="https://github.com/Suarwill/APP_Analista" target="_blank">Ver en GitHub</a>
+                    </div>
+                    <div class="proyecto">
+                        <h3>Gestión de Inventarios</h3>
+                        <p>
+                            Sistema de control de inventario con HTML, CSS y JavaScript, que permite gestionar productos fácilmente con almacenamiento en LocalStorage.
+                        </p>
+                        
+                        <h4>Características:</h4>
+                        <ul>
+                            <li>Interfaz amigable y responsive</li>
+                            <li>Buscador de productos</li>
+                            <li>Listado de inventario actualizado</li>
+                            <li>Almacenamiento de datos en LocalStorage</li>
+                        </ul>
+                        
+                        <h4>Tecnologías utilizadas:</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        
+                        <h4>Repositorio en GitHub:</h4>
+                            <a href="https://github.com/Suarwill/Proyecto_JS_GestionInventario" target="_blank">Ver en GitHub</a>
+                    </div>
+                    
+                </section>
+            </div>
         
         <div id="contacto">
             <section class="contact">
-                <h2>Contacto</h2>
-                <p>Email: 23763487k@gmail.com</p>
-                <a href="https://www.linkedin.com/in/suarwill/">LinkedIn: Suarwill</a>
-                <p>2</p>
+                <h2 hidden="true">Contacto</h2>
+                <a href="mailto:23763487k@gmail.com" target="_blank">
+                    <img src="img/mail.png" alt="mail" width="100px" height="100px" >
+                </a>
+                <a href="https://www.linkedin.com/in/suarwill/" target="_blank" > 
+                    <img src="./img/logoLI.png" alt="Logo LinkedIn" width="100px" height="100px" />
+                </a>
             </section>
         </div>
 

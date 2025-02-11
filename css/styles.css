@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
 }
 
 .background {
@@ -12,7 +10,6 @@ body {
 
 .contenido {
     background-color: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -21,27 +18,44 @@ header {
     text-align: center;
 }
 
-.project {
-    border: 1px solid #ccc;
+#contenido-proyectos{
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#contenido-proyectos h2{
+    text-align: center;
 }
 
-.lineales {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+#projects {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.proyecto{
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 10px;
+} 
+
+.proyecto h3{
+    text-align: center;
 }
 
 .contact {
-    margin: 20px;
-    padding: 20px;
-    background:content-box linear-gradient(to right,steelblue , lightskyblue);
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: right;
+    /*background: linear-gradient(90deg, steelblue 0%, skyblue 100%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);*/
+    text-align: center;
     font-style: italic;
     font-size: 14px;
     color: black;
@@ -51,5 +65,5 @@ footer {
     margin: 20px;
     text-align: center;
     font-size: 12px;
-    color: white;
+    color: blue;
 }
