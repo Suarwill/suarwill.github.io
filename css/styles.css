@@ -10,7 +10,7 @@ body.background {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-color: linear-gradient(60deg, rgb(255, 255, 255) 0%, rgb(228, 215, 215) 100%);
 }
 
 header {
