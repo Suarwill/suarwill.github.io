@@ -1,29 +1,71 @@
 body {
     font-family: Arial, sans-serif;
+    align-items: center;
 }
 
 .background {
-    background-image: url("../../img/bg.jpg");
+    background-image: url('../img/bg.jpg');
     background-size: cover;
-    opacity: 1;
-}
-
-.contenido {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333; 
+    padding: 10px 15px;   
+    border-radius: 5px;   
+    transition: background-color 0.3s ease; 
+}
+
+nav li a:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;  /* Stack header vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+    nav ul {
+        margin-top: 10px; /* Add some margin on smaller screens */
+    }
+}
+
+#about {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    padding: 20px;
+    background: whitesmoke;
     text-align: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #contenido-proyectos{
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 #contenido-proyectos h2{
     text-align: center;
@@ -38,11 +80,15 @@ header {
 
 .proyecto{
     width: 40%;
+    margin: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 20px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
 
 .proyecto h3{
