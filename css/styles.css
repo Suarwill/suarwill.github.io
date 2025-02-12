@@ -99,6 +99,7 @@ nav li a:hover {
 
 .proyecto{
     width: 40%; 
+    min-width: 20rem;
     padding: 20px;
     background: var(--color-base);
     border: 1px solid #ccc;
