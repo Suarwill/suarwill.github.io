@@ -93,8 +93,6 @@ nav li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin: 5rem auto;
-    padding-top: 0px;
 }
 
 .proyecto{
