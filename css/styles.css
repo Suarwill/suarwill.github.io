@@ -86,6 +86,9 @@ nav li a:hover {
     border-radius: var(--borde-radio-base);
     box-shadow: var(--borde-sombra);
 }
+#about h1{
+    text-align: center;
+}
 
 #experiencia {
     width: 100%;
