@@ -1,6 +1,7 @@
-:root{
-    --color-base: linear-gradient(150deg, rgb(153, 153, 231) ,#ffffff 50%, rgb(153, 153, 231) 80%);
+:root {
+    --color-base: linear-gradient(150deg, rgb(153, 153, 231), #ffffff 50%, rgb(153, 153, 231) 80%);
     --color-lineal-texto: linear-gradient(1deg, black 40%, white 46%, black 55%);
+    --color-text: darkslateblue;
     --borde-base: 1px solid #989ddd;
     --borde-radio-base: 30px;
     --borde-sombra: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -12,40 +13,46 @@ body {
 }
 
 body.background {
-    background-image: url('../img/bg.jpg');
-    background-color: var(--color-base);
+    background: url('../img/bg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
 }
 
+/* Clase auxiliar para secciones con estilo visual similar */
+.box-estilo {
+    background: var(--color-base);
+    border: var(--borde-base);
+    border-radius: var(--borde-radio-base);
+    box-shadow: var(--borde-sombra);
+    color: var(--color-text);
+    text-align: justify;
+    padding: 1% 5%;
+    margin: 5%;
+}
+
+/* ===================== HEADER ===================== */
 header {
     display: flex;
-    margin-right: 5% ;
-    margin-left: 5%;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /*background: var(--color-base); */
-    border-radius: 10px;
-    /*box-shadow: var(--borde-sombra);*/
+    margin: 0 5%;
+    padding: 2% 20px;
     color: white;
     font-weight: bold;
     font-size: 24px;
     text-shadow: 0 0 10px skyblue;
 }
 
+/* ===================== NAV ===================== */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 nav li a {
@@ -53,100 +60,89 @@ nav li a {
     color: white;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px 15px;   
-    border-radius: 5px;   
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav li a:hover {
     background-color: blue;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    nav ul {
-        margin-top: 10px;
-    }
-}
-
-#about {
+/* ===================== SECCIONES ===================== */
+#about,
+.proyecto {
     background: var(--color-base);
-    margin: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border: var(--borde-base);
     border-radius: var(--borde-radio-base);
     box-shadow: var(--borde-sombra);
-}
-#about h1{
-    text-align: center;
-}
-
-#experiencia {
-    width: 100%;
-    text-align: left;
+    color: var(--color-text);
+    text-align: justify;
+    padding: 1% 5%;
+    margin: 1%;
 }
 
-#contenido {
-    margin-right: 5%;
-    margin-left: 5%;
+/* #about específicas */
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contenido h2{
+#about h1 {
     text-align: center;
-    font-size: 44px;
-    /*background-image: var(--color-lineal-texto);
-    background-clip: text;
-    color: transparent;*/
-    color: white;
-    text-shadow: 0 0 10px skyblue;
 }
 
+/* #contenido */
+#contenido {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenido h2 {
+    text-align: center;
+    font-size: 44px;
+    color: white;
+    text-shadow: 0 0 10px skyblue;
+    /* Para gradiente en texto: */
+    /* background-image: var(--color-lineal-texto);
+       background-clip: text;
+       color: transparent; */
+}
+
+/* ===================== PROYECTOS ===================== */
 #projects {
-    display: inline-flex;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    columns: 2;
+    gap: 10px;
     margin-bottom: 2%;
 }
 
-.proyecto{
-    width: 40%; 
-    min-width: 21rem;
-    padding: 20px;
-    background: var(--color-base);
-    border: var(--borde-base);
-    border-radius: var(--borde-radio-base);
-    box-shadow: var(--borde-sombra);
+.proyecto {
+    width: 35%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
-.proyecto h3{
+.proyecto h3 {
     text-align: center;
     font-size: 24px;
     color: black;
     text-decoration: underline;
 }
 
+/* ===================== CONTACTO ===================== */
 .contact {
     text-align: center;
-    justify-items: space-between;
 }
 
-.contact a img{
+.contact a img {
     margin: 2%;
     width: 80px;
     height: 80px;
@@ -155,10 +151,23 @@ nav li a:hover {
     box-shadow: 0 0 10px skyblue;
 }
 
+/* ===================== FOOTER ===================== */
 footer {
     margin: 20px;
     text-align: center;
     font-size: 12px;
     color: white;
     text-shadow: 0 0 5px skyblue;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
 }
